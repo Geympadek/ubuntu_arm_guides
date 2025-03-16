@@ -1,0 +1,9 @@
+sudo add-apt-repository ppa:mozillateam/firefox-next
+
+echo "
+Package: firefox
+Pin: version 1:1snap1-0ubuntu2
+Pin-Priority: 99
+" | sudo tee /etc/apt/preferences
+
+sudo apt install firefox
